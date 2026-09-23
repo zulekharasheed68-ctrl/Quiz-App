@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgb(27, 156, 173), black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.box1 {
+    background-color: rgb(20, 20, 20);
+    border: 5px solid rgb(180, 168, 168);
+    width: 700px;
+    min-height: 500px;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.4);
+}
+
+
+
+
+.intro {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+.start {
+    height: 70px;
+    width: 200px;
+
+    background: linear-gradient(rgb(0, 204, 255), black);
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 40px;
+
+    margin-top: 40px;
+
+    cursor: pointer;
+}
+
+.start:hover {
+    color: black;
+    background: linear-gradient(white, rgb(36, 147, 155));
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+}
+
+
+
+.quiz-box {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+.quiz-box h2 {
+    color: rgb(0, 204, 255);
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+
+.quiz-box h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.timer {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#time {
+    color: rgb(0, 204, 255);
+    font-size: 28px;
+}
+
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+.option {
+    width: 100%;
+    min-height: 55px;
+    background: linear-gradient(rgb(36, 147, 155), black);
+    color: white;
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.option:hover {
+    background: linear-gradient(white, rgb(36, 147, 155));
+    color: black;
+    box-shadow: 0 0 15px rgb(0, 204, 255);
+}
+
+
+
+.quiz-box > p:last-child {
+    margin-top: 25px;
+    font-size: 20px;
+    color: rgb(0, 204, 255);
+    font-weight: bold;
+}
+
+
+
+.result {
+    text-align: center;
+    color: white;
+}
+
+.result h1 {
+    font-size: 40px;
+    color: rgb(0, 204, 255);
+    margin-bottom: 20px;
+}
+
+.result h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.result p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+.restart {
+    height: 60px;
+    width: 220px;
+
+    background: linear-gradient(rgb(0, 204, 255), black);
+    color: white;
+
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 40px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.restart:hover {
+    background: linear-gradient(white, rgb(36, 147, 155));
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .box1 {
+        width: 100%;
+        min-height: 500px;
+        padding: 20px;
+    }
+
+    .intro {
+        font-size: 23px;
+    }
+
+    .start {
+        width: 180px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .quiz-box h2 {
+        font-size: 23px;
+    }
+
+    .quiz-box h3 {
+        font-size: 21px;
+    }
+
+    .option {
+        font-size: 17px;
+        min-height: 50px;
+    }
+
+    .result h1 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .box1 {
+        min-height: 450px;
+        border-width: 3px;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+
+    .start {
+        width: 160px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .quiz-box h2 {
+        font-size: 20px;
+    }
+
+    .quiz-box h3 {
+        font-size: 18px;
+    }
+
+    .timer {
+        font-size: 18px;
+    }
+
+    .option {
+        font-size: 15px;
+    }
+}
